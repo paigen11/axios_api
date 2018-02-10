@@ -1,0 +1,25 @@
+{
+  "name": "axios_api",
+  "version": "1.0.0",
+  "description": "Sample using Axios to make server requests",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paigen11/axios_api.git"
+  },
+  "keywords": [
+    "axios"
+  ],
+  "author": "Paige Niedringhaus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paigen11/axios_api/issues"
+  },
+  "homepage": "https://github.com/paigen11/axios_api#readme",
+  "dependencies": {
+    "axios": "^0.17.1"
+  }
+}

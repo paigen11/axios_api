@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS Axios Demo</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.3/cerulean/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <h1>JS Axios Demo</h1>
+    <div class="jumbotron">
+        <h1>This is a demo app using Axios</h1>
+        <h4> Axios is a Promise-based HTTP client for JavaScript which can be used in your front-end application and in your Node.js backend.
+            It's writing to a locally hosted JSON Server. The repo and instructions for the server can be found here:
+            <a href="https://github.com/paigen11/json_server_api">
+                https://github.com/paigen11/json_server_api
+            </a>
+        </h4>
+    </div>
+    <div class="panel panel-primary">
+        <div class="panel-heading">GET Request</div>
+        <div class="panel-body">
+            <button class="btn btn-primary" onclick="performGetRequest1()">Get Products</button>
+            <button class="btn btn-warning" onclick="clearOutput()">Clear</button>
+            <div class="panel-body" id="getResult1"></div>
+        </div>
+    </div>
+    <br>
+    <div/ class="panel panel-primary">
+        <div class="panel-heading">GET Request with Paramaters</div>
+        <div class="panel-body">
+            <input type="text" class="form-control" id="todoId" placeholder="Product ID ..."/><br/>
+           <button class="btn btn-primary" onclick="performGetRequest2()">Get Product</button>
+            <button class="btn btn-warning" onclick="clearOutput()">Clear</button>
+            <div class="panel-body" id="getResult2"></div>
+        </div>
+    </div>
+    <br>
+    <div class="panel panel-primary">
+        <div class="panel-heading">POST Request</div>
+        <div class="panel-body">
+            <form class="form-inline" id="todoInputForm">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="todoTitle" placeholder="Product Title ..."><br/>
+                    <input type="text" class="form-control" id="todoProductName" placeholder="Product Name ..."/><br/>
+                    <input type="text" class="form-control" id="todoProduct" placeholder="Product ..."/><br/>
+                </div>
+                <br/>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+            <br>
+            <button class="btn btn-warning" onclick="clearOutput()">Clear</button>
+            <div class="panel-body" id="postResult"></div>
+        </div>
+    </div>
+    <br>
+    <div class="footer">
+        <p>Made by: Paige Niedringhaus <a href="https://github.com/paigen11/axios_api.git" target="_blank">Github Repo</a></p>
+    </div>
+</div>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</body>
+</html>
