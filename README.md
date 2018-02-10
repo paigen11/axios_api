@@ -8,3 +8,5 @@ Then pull down this [JSON server repo](https://github.com/paigen11/json_server_a
 After the server is running, you can open up the index.html file and make GETs and POSTs to your heart's content.
 
 It doesn't get much simpler than that.
+
+More info on the Axios HTTP client can be found [here](https://www.npmjs.com/package/axios).
